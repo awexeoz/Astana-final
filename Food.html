@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/01d1f82a0d.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style_food.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">ASTANA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Attractions.html">Attractions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Food.html">Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="Contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Game.html">Game</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Quiz.html">Quiz</a>
+          </li>
+          <form action="https://www.google.com/search" class="search" id="search-bar">
+            <input type="search" placeholder="Type something..." name="q" class="search__input">
+  
+            <div class="search__button" id="search-button">
+                <i class="ri-search-2-line search__icon"></i>
+                <i class="ri-close-line search__close"></i>
+            </div>
+          </form>
+        </ul>
+      </div>
+    </nav>
+  </div> 
+
+  <!-- Header  -->
+  <header>
+    <div class="header-content">
+        <h2>Astana</h2>
+        <hr class="line"></hr>
+        <h1>Restaurants <br> & <br> Cafes</h1>
+    </div>
+  </header>
+
+
+  <!-- Roku  -->
+  <div class="food-page">
+    <h1 class="Restaurant-title">ROKU</h1>
+    <div class="restaurant-line"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="Roku" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#Roku" data-slide-to="0" class="active"></li>
+              <li data-target="#Roku" data-slide-to="1"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Roku1.jpg" class="rounded" alt="Roku">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Roku2.jpg" class="rounded" alt="Roku">
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#Roku" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#Roku" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 food-image food-description">
+          <p>
+              An establishment with a cool atmosphere in the spirit of Wong Kar-wai's films - dim lights, neons and that's all. The ceiling hung with red lanterns is a bright detail of the interior, but the only one. There is also a long bar counter and a neon sign with hieroglyphs that make an impression.
+          </p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" id="rokuCuisine"></li>
+            <li class="list-group-item" id="rokuBill"></li>
+            <li class="list-group-item" id="rokuAdress"></li>
+          </ul>
+          <button class="btn btn-secondary learn-more-button" onclick="openRokuModal()">Reviews</button>
+        </div>
+      </div>
+  </div>
+
+
+  <!-- Modal box for Roku -->
+  <div id="rokuModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeRokuModal()">&times;</span>
+
+        <!-- Reviews -->
+        <div class="reviews">
+            <h3>Reviews and Ratings</h3>
+            <div class="review-item">
+                <p class="review-rating">Rating: 4.5/5</p>
+                <p>Wonderful experience at Roku! The ambiance is fantastic, and the food is delicious.</p>
+            </div>
+            <div class="review-item">
+                <p class="review-rating">Rating: 5/5</p>
+                <p>Great food and friendly staff. Highly recommended!</p>
+            </div>
+            <div class="review-item">
+              <p class="review-rating">Rating: 4/5</p>
+              <p>Nice place with a unique atmosphere. The sushi was excellent!</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- Gasteria  -->
+  <div class="food-page2">
+    <h1 class="Restaurant-title2">GASTERIA</h1>
+    <div class="restaurant-line"></div>
+      <div class="row reverse">
+        <div class="col-md-6">
+          <div id="Gasteria" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#Gasteria" data-slide-to="0" class="active"></li>
+              <li data-target="#Gasteria" data-slide-to="1"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Gasteria1.jpg" class="rounded" alt="Gasteria">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Gasteria2.jpg" class="rounded" alt="Gasteria">
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#Gasteria" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#Gasteria" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 food-image food-description2">
+          <p>
+              A restaurant with two branches, designed in European style - restrained but elegant. Sand colors, natural materials and a lot of light are the philosophy of the establishment. Here, by the way, not only the interior is beautiful, but also the presentation, as well as the names of the dishes.
+          </p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item restaurant-info" id="gasteriaCuisine"></li>
+            <li class="list-group-item restaurant-info" id="gasteriaBill"></li>
+            <li class="list-group-item restaurant-info" id="gasteriaAdress"></li>
+          </ul>
+          <button class="btn btn-secondary learn-more-button" onclick="openGasteriaModal()">Reviews</button>
+        </div>
+      </div>
+  </div>
+
+    <!-- Gasteria Modal -->
+  <div id="gasteriaModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeGasteriaModal()">&times;</span>
+
+        <!-- Отзывы и рейтинги -->
+        <div class="reviews">
+            <h3>Reviews and Ratings</h3>
+            <div class="review-item">
+                <p class="review-rating">Rating: 4.2/5</p>
+                <p>Great atmosphere and delicious European cuisine. Would visit again!</p>
+            </div>
+            <div class="review-item">
+                <p class="review-rating">Rating: 4.8/5</p>
+                <p>The interior is elegant, and the presentation of dishes is exceptional. Highly recommended!</p>
+            </div>
+            <div class="review-item">
+              <p class="review-rating">Rating: 4.5/5</p>
+              <p>Excellent service and a variety of tasty dishes. Enjoyed the experience at Gasteria!</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- Meatador  -->
+  <div class="food-page">
+    <h1 class="Restaurant-title">MEATADOR</h1>
+    <div class="restaurant-line"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="Meatador" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#Meatador" data-slide-to="0" class="active"></li>
+              <li data-target="#Meatador" data-slide-to="1"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Meatador1.jpg" class="rounded" alt="Meatador">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Meatador2.jpg" class="rounded" alt="Meatador">
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#Meatador" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#Meatador" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 food-image food-description">
+          <p>
+              In addition to the beautiful interior, which contains a lot of leather, wood and metal, the establishment has a cool feature - tables with a built-in brazier. You can fry the meat yourself, and then enjoy the juicy meat in the heat. A hood is installed above each such table. The chef also puts on a show with food served.
+          </p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" id="meatadorCuisine"></li>
+            <li class="list-group-item" id="meatadorBill"></li>
+            <li class="list-group-item" id="meatadorAdress"></li>
+          </ul>
+          <button class="btn btn-secondary learn-more-button" onclick="openMeatadorModal()">Reviews</button>
+        </div>
+      </div>
+      <div class="feedbackbox">
+        <h4>Are you agree with us?</h4>
+        <div class="emoji">
+          <div id="emoji">
+            <img src="img/poor.png">
+            <img src="img/bad.png">
+            <img src="img/okay.png">
+            <img src="img/good.png">
+            <img src="img/excellent.png">
+          </div>
+        </div>
+        <div class="rating">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+      </div>
+  </div>
+
+  <!-- Meatador Modal -->
+  <div id="meatadorModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeMeatadorModal()">&times;</span>
+
+        <!-- Отзывы и рейтинги -->
+        <div class="reviews">
+            <h3>Reviews and Ratings</h3>
+            <div class="review-item">
+                <p class="review-rating">Rating: 4.6/5</p>
+                <p>Amazing steakhouse with a great selection of meats. The ambiance is perfect for meat lovers!</p>
+            </div>
+            <div class="review-item">
+                <p class="review-rating">Rating: 4.9/5</p>
+                <p>Top-notch service and delicious dishes. Meatador never disappoints!</p>
+            </div>
+            <div class="review-item">
+                <p class="review-rating">Rating: 4.3/5</p>
+                <p>Quality cuts and a cozy atmosphere. A must-try for anyone who enjoys a good steak!</p>
+            </div>
+            <!-- Добавьте другие отзывы по аналогии -->
+        </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; Alinur Alipov, Alikhan Dosmaganbetov, Yernur Koishyabyev</p>
+    <div class="socialMedia">
+      <ul class="sci">
+        <li data-color="#1877f2">
+          <a href="https://kk-kz.facebook.com/www.astana.kz" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </li>
+        <li data-color="#0099ff">
+          <a href="https://twitter.com/TheAstanaTimes" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </li>
+        <li data-color="#ff0000">
+          <a href="https://www.youtube.com/watch?v=DPm2t5Ins4A&ab_channel=CoolVision" class="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+        </li>
+        <li data-color="#e4405f">
+          <a href="https://www.instagram.com/sxodim.astana/" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+  </div>
+  </footer>
+
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="js/vanilla.js"></script>
+  <script src="js/Food.js"></script>
+</body>
+</html>
